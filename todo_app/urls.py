@@ -9,5 +9,6 @@ router.register(r'todos', TodoViewSet)
 # Additionally, we include login URLs for the browsable API.
 urlpatterns = [
     path('', include(router.urls)),
-    path('home/', index, name='home')
+    path('home/', index, name='home'),
+    path('load/', load_more, name='load')
 ]
